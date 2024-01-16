@@ -23,5 +23,5 @@ else{
     printf("sei nato nell'anno dell'allunaggio\n");
 }
 
-return(0);
+return 0;
 }
