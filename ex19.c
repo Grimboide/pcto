@@ -1,20 +1,23 @@
 #include <stdio.h>
 
 int main(){
+    float n;
+    float den;
+    float temp;
+    float somma;
 
-int n = 0;
-int m;
-int d = 0;
-
-    while( n >= 0 )
-    {
-        d = d + 1;
-        printf("inserisci un altro numero\n");
-        scanf("%d", &n);
-        n = n + n;
-        m = n / d;
-        printf("la media dei numeri inseriti è: %d\n", m);
+    den = 1;
+    temp = 0;
+    n = 0;
+    printf("Inserisci un numero: ");
+    scanf("%f", &n);
+    while (n > 0){
+        somma = n + temp;
+        printf("La media è %f \n",somma / den);
+        temp = somma;
+        den = den + 1;
+        printf("Inserisci un numero: ");
+        scanf("%f", &n);  
     }
-
-return(0);
+    return 0;
 }
